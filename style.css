@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #262626;
+}
+::-webkit-scrollbar{
+  width:0px;/*for vertical*/
+  height:5px;/*for horizontal*/
+}::-webkit-scrollbar-track{
+  background-color: #383838;
+  border-radius: 10px;
+  margin:0px 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(45deg, #82fafa, #0affff);
+  border-radius: 10px;
+}
+.profile{
+  position:relative;
+  background-image:url("coding_header.jpg");
+  background-size:cover;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-photo{
+  position: absolute;
+  top:50px; 
+  left:30px;
+  border:2px solid #242424;
+  border-radius: 50%;
+  height:100px;
+  width: 100px;
+}
+main .about{
+  color:white;
+  margin:60px 10px 10px 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px #0f0f0f;
+}
+main .about h2{
+  padding:5px 20px;
+}
+main .about p{
+  padding:5px 25px
+}
+main .project-box , .skill-container, #contact-form {
+  padding:10px;
+  color:white;
+  margin:15px 10px 10px 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #0f0f0f;
+}
+main .project-box h2{
+  padding:0px 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+main .project-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding:0px 10px;
+    }
+ main .project {
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        margin-right: 20px;
+        border-radius: 10px;
+        padding:10px 10px 0px 10px;
+    }
+main .project h3{
+  text-align: center;
+  padding-bottom:10px;
+}
+main .project p{
+  padding:5px;
+  color: #d6d6d6;
+}
+main .project-container .project .project-image{
+  width:100%;
+  height:50%;
+  border-radius:10px;
+}main .skill-container .skill{
+  margin-top:10px;
+  padding:10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #0f0f0f;
+}
+main .skill-container .track{
+  width:100%;
+  height:7px;
+  margin:10px 0px;
+  background-color: #383838;
+  border-radius:10px;
+  box-shadow: 1px 1px 10px #0f0f0f;
+}main .html-thumb{
+  width:90%;
+  height:7px;
+  background-color: #00e6e6;
+  border-radius:10px;
+  transition: linear 0.5s ease;
+}main .Css-thumb{
+  width:70%;
+  height:7px;
+  background-color: #00e6e6;
+  border-radius:10px;
+  transition: linear 0.5s ease;
+}main .js-thumb{
+  width:60%;
+  height:7px;
+  background-color: #00e6e6;
+  border-radius:10px;
+  transition: 0.5s ease;
+}main section #contact-form .form-group{
+  position: relative;
+  margin: 20px 0px;
+}main section #contact-form h3{
+  color:cyan;
+}
+main section #contact-form input{
+  background-color: #262626;;
+  width:100%;
+  height:30px;
+  color:white;
+  border:2px solid #d6d6d6;
+  border-radius:10px;
+  font-size: 16px;
+  padding:0px 10px;
+}main section #contact-form input:hover{
+  border:2px solid #00ffff;
+}textarea.form-input {
+  width: 100%;
+  min-height: 100px;
+  height: 120px;
+  max-height: 200px;
+  resize: vertical;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border:2px solid #d6d6d6;
+  padding:10px;
+  color:white;
+  background-color: #262626;
+}
+main section #contact-form  input:placeholder{
+  color:white;
+}
+main section #contact-form .form-btn{
+  width:100%;
+  height:30px;
+  border:2px solid #00ffff;
+  background-color: #262626;
+  color:cyan;
+  border-radius:10px;
+  font-size: 16px;
+  padding:0px 10px;
+  cursor: pointer;
+  transition:transform 0.5s ease;
+}main section #contact-form .form-btn:hover{
+  transform: scale(.97);
+}#social-media{
+  padding:10px;
+  margin:15px 10px 10px 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #0f0f0f;
+}
+.social-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:10px;
+}.social-group a{
+  text-decoration: none;
+  margin:0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.social-group .instagram a{
+  background-image: linear-gradient(to right, red,blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}.social-group .Twitter a{
+  color: #000000;
+}
+.social-group i{
+  font-size: 30px;
+  padding:10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}.social-group .icon {
+  margin:5px;
+}.social-group .icon:active .social-group .icon:active p{
+  transform: scale(0.9);
+  transition: transform 0.5s ease;
+}.social-group p{
+  opacity:0;
+  margin:5px;
+  padding:5px;
+  background-color: #828282;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+#footer{
+  border-top: 1px solid #d6d6d6;
+  width: 100%;
+  margin-top:15px;
+  color:white;
+  text-align: center;
+  padding:10px;
+}
